@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="kn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪೊಲೀಸ್ ಘಟನಾ ಸ್ಥಳದ ಪಂಚನಾಮೆ | Crime Details Form</title>
+<style>
+:root{--navy:#10253f;--blue:#1f5f99;--teal:#0e8178;--bg:#f3f6fa;--ink:#172334;--muted:#66758a;--line:#dce4ed;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:system-ui,-apple-system,"Noto Sans Kannada","Nirmala UI",sans-serif;color:var(--ink)}
+.topbar{background:linear-gradient(120deg,#10253f,#1e5687);color:#fff;padding:20px clamp(14px,4vw,42px);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{display:flex;gap:12px;align-items:center}.crest{width:46px;height:46px;border:1px solid #ffffff75;border-radius:14px;display:grid;place-items:center;font-size:24px}h1{font-size:clamp(18px,2.8vw,27px);margin:0}.top-actions{display:flex;gap:8px;flex-wrap:wrap}
+button{border:0;border-radius:9px;padding:10px 13px;font-weight:650;cursor:pointer;font-size:13px}.primary{background:var(--teal);color:#fff}.light{background:#fff;color:var(--navy)}.outline{background:transparent;border:1px solid #ffffff70;color:#fff}.secondary{background:#eaf0f6;color:#253b55}.danger{background:#fff0ef;color:#a42d29}
+.layout{max-width:1440px;margin:auto;padding:22px clamp(12px,3vw,32px);display:grid;grid-template-columns:250px minmax(0,1fr);gap:20px}.sidebar{align-self:start;background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px;position:sticky;top:12px}.side-title{font-size:12px;color:var(--muted);margin:0 0 12px}.progress-track{height:7px;background:#e9eef4;border-radius:8px;overflow:hidden;margin:9px 0 14px}.progress-fill{height:100%;width:0;background:var(--teal);transition:width .2s}.navlist{display:grid;gap:3px}.navlist a{display:flex;gap:8px;align-items:center;padding:8px;border-radius:8px;text-decoration:none;color:#43536a;font-size:12px}.navlist a:hover,.navlist a.active{background:#eaf4f5;color:#0b6e68}.num{width:24px;height:24px;border-radius:7px;background:#edf1f6;display:grid;place-items:center;font-weight:700;flex-shrink:0}.navlist a.active .num{background:var(--teal);color:white}
+main{min-width:0}.card{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;overflow:hidden;scroll-margin-top:14px}.card-head{padding:15px 18px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:11px;background:#fbfdff}.badge{width:32px;height:32px;border-radius:9px;background:#e9f3f8;color:var(--blue);display:grid;place-items:center;font-weight:800}.card-head h2{font-size:16px;margin:0}.card-head p{margin:3px 0 0;color:var(--muted);font-size:11px}.card-body{padding:18px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{min-width:0}.field.full{grid-column:1/-1}label{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:#34445a}input,select,textarea{width:100%;border:1px solid #cfd9e5;border-radius:8px;padding:10px 11px;background:#fff;color:var(--ink);font:inherit;font-size:14px;outline:none}input:focus,select:focus,textarea:focus{border-color:#3a8eaa;box-shadow:0 0 0 3px #3a8eaa1b}textarea{min-height:85px;resize:vertical}.hint{font-size:11px;color:var(--muted);margin-top:5px}.repeat-item{border:1px dashed #c6d5e3;border-radius:11px;padding:12px;margin-bottom:10px}.repeat-title{font-weight:750;font-size:13px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}.small-btn{padding:7px 10px;font-size:12px;background:#eef3f7;color:#34445a}.uploadbox{border:1px dashed #aebfd0;border-radius:11px;padding:14px;background:#f9fbfd}.preview{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}.preview img{max-width:140px;max-height:110px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}.capture-preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin-top:12px}.capture-card{border:1px solid var(--line);border-radius:10px;padding:9px;background:#fff;min-width:0}.capture-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:7px;background:#eef2f6}.capture-actions{display:flex;gap:6px;margin-top:8px}.capture-actions button{flex:1;padding:7px 8px}.camera-actions{display:flex;gap:8px;flex-wrap:wrap}.ratio-note{font-size:12px;color:var(--muted);margin:7px 0 0}.footerbar{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:14px;background:#fff;border:1px solid var(--line);border-radius:13px;margin:16px 0 26px}.footerbar .left,.footerbar .right{display:flex;gap:8px;flex-wrap:wrap}.status{font-size:12px;color:var(--muted);align-self:center}
+.modal{display:none;position:fixed;inset:0;background:#17233499;z-index:9999;align-items:center;justify-content:center;padding:15px}.modal-box{background:#fff;color:#1d2939;border-radius:18px;padding:20px;max-width:760px;width:100%;max-height:85vh;overflow:auto;box-shadow:0 20px 60px #0004}.file-row{border-top:1px solid #d8dee7;padding:13px 0;display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.file-actions{display:flex;gap:6px;flex-wrap:wrap}.upload-file-card{display:inline-flex;flex-direction:column;gap:6px;max-width:220px;padding:8px;border:1px solid var(--line);border-radius:8px;background:#fff;margin:4px}.upload-file-card img{max-width:190px;max-height:130px;object-fit:contain}.upload-file-card video{max-width:190px;max-height:130px}.upload-file-name{font-size:12px;overflow-wrap:anywhere}.upload-file-actions{display:flex;gap:5px;flex-wrap:wrap}.upload-file-actions button{padding:6px 8px;font-size:11px}textarea{min-height:48px;overflow:hidden;resize:none}
+@media(max-width:950px){.layout{grid-template-columns:1fr}.sidebar{position:static}.navlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.topbar{padding:15px 12px}.top-actions{width:100%}.top-actions button{flex:1}.layout{padding:10px;gap:10px}.card-head{padding:13px}.card-body{padding:13px}.grid{grid-template-columns:1fr;gap:12px}.field.full{grid-column:auto}.footerbar .left,.footerbar .right{width:100%}.footerbar button{flex:1}.brand{align-items:flex-start}.crest{width:38px;height:38px}}
+@media print{
+  @page{size:auto;margin:12mm}
+  html,body{background:#fff!important;color:#111!important;font-size:10pt}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .topbar .top-actions,.sidebar,.footerbar,.modal,.small-btn,
+  .camera-actions,input[type="file"],.ratio-note,.capture-actions,
+  .upload-file-actions{display:none!important}
+  .topbar{display:block;background:#fff!important;color:#111;padding:0 0 8px}
+  .topbar h1{color:#111;font-size:17pt;text-align:center}
+  .crest{display:none}
+  .layout{display:block;padding:0;max-width:none}
+  .card{break-inside:auto;page-break-inside:auto;border:1px solid #aaa;margin:0 0 8px;overflow:visible}
+  .card-head{background:#fff;padding:8px 10px}
+  .card-body{padding:8px 10px}
+  .grid{gap:8px 12px}
+  /* Allow long narrative fields to continue onto the next page instead of
+     moving the entire field and leaving a large blank area. */
+  .field{break-inside:auto;page-break-inside:auto;min-width:0}
+  .field:has(textarea){grid-column:1/-1}
+  .repeat-item,.capture-card{break-inside:avoid;page-break-inside:avoid}
+  .repeat-item{padding:8px;margin-bottom:7px}
+  .print-text-content{display:block;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;line-height:1.45;padding:3px 2px;border-bottom:1px solid #aaa;min-height:1.25em;break-inside:auto;page-break-inside:auto}
+  textarea.print-source{display:none!important}
+  input,select,textarea{
+    appearance:none!important;-webkit-appearance:none!important;
+    border:0!important;border-bottom:1px solid #aaa!important;
+    padding:3px 2px!important;border-radius:0!important;
+    min-height:0!important;background:transparent!important;
+    box-shadow:none!important;color:#111!important;
+    font-size:10pt;overflow:visible;resize:none
+  }
+  select{background-image:none!important;padding-right:2px!important}
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator,
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="datetime-local"]::-webkit-inner-spin-button,
+  input[type="time"]::-webkit-inner-spin-button{display:none!important;-webkit-appearance:none!important}
+  textarea{white-space:pre-wrap;overflow-wrap:anywhere;overflow:visible!important}
+  .uploadbox{border:0!important;padding:4px 0!important;background:transparent!important}
+  .preview,.capture-preview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:6px}
+  .preview img,.capture-card img{display:block;width:100%;max-width:100%;max-height:none;object-fit:contain;border:1px solid #ccc}
+  .upload-file-card{display:block;max-width:100%;border:0;padding:4px;margin:0}
+  .upload-file-name{font-size:9pt}
+  video{max-width:100%;height:auto}
+  .hint{font-size:9pt}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="brand"><div class="crest">⚖️</div><div><h1>ಕರ್ನಾಟಕ ರಾಜ್ಯ ಪೊಲೀಸ್ ಘಟನಾ ಸ್ಥಳದ ಪಂಚನಾಮೆ<br>ಅಪರಾಧ ವಿವರಗಳ ನಮೂನೆ (CRIME DETAILS FORM)</h1></div></div>
+ <div class="top-actions"><button class="outline" type="button" onclick="window.print()">🖨️ ಮುದ್ರಿಸಿ / PDF</button><button class="primary" type="button" onclick="saveForm()">✓ ಕಡತ ಉಳಿಸಿ</button><button class="light" type="button" onclick="openSavedFiles()">📁 ಉಳಿಸಿದ ಫೈಲ್‌ಗಳು</button></div>
+</header>
+<div class="layout">
+<aside class="sidebar"><p class="side-title">ಫಾರ್ಮ್ ವಿಭಾಗಗಳು · 19 ಅಂಶಗಳು</p><div id="progressText">0% ಪೂರ್ಣಗೊಂಡಿದೆ</div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><nav class="navlist" id="navlist"></nav></aside>
+<main><form id="crimeForm" autocomplete="off">
+<section class="card" id="s1"><div class="card-head"><span class="badge">01</span><div><h2>ಪೊಲೀಸ್ ಠಾಣೆ ಮತ್ತು ಜಿಲ್ಲೆ</h2><p>Police station and district details</p></div></div><div class="card-body grid"><div class="field"><label>ಜಿಲ್ಲೆ</label><input name="district" placeholder="ಜಿಲ್ಲೆಯ ಹೆಸರು"></div><div class="field"><label>ಪೊಲೀಸ್ ಠಾಣೆ</label><input name="policeStation" placeholder="ಠಾಣೆಯ ಹೆಸರು"></div></div></section>
+<section class="card" id="s2"><div class="card-head"><span class="badge">02</span><div><h2>ಅಪರಾಧ ಸಂಖ್ಯೆ ಮತ್ತು ದಿನಾಂಕ</h2><p>Crime number and date</p></div></div><div class="card-body grid"><div class="field"><label>ಗುನ್ನೆ ಸಂಖ್ಯೆ / Crime No.</label><input name="crimeNo" placeholder="ಉದಾ. 252/2025"></div><div class="field"><label>ದಿನಾಂಕ</label><input type="date" name="formDate"></div></div></section>
+<section class="card" id="s3"><div class="card-head"><span class="badge">03</span><div><h2>ಕಾನೂನು ಮತ್ತು ಸೆಕ್ಷನ್</h2><p>Act and sections</p></div></div><div class="card-body grid"><div class="field"><label>ಕಾಯ್ದೆ</label><input name="act" placeholder="ಉದಾ. BNS 2023"></div><div class="field"><label>ಸೆಕ್ಷನ್ / ಉಪವಿಭಾಗ</label><input name="sections" placeholder="ಉದಾ. 309(4)"></div></div></section>
+<section class="card" id="s4"><div class="card-head"><span class="badge">04</span><div><h2>ಅಪರಾಧ ನಡೆದ ಸ್ಥಳ ಮತ್ತು ದೂರುದಾರರ ವಿವರ</h2><p>Incident location and complainant details</p></div></div><div class="card-body grid"><div class="field full"><label>ಅಪರಾಧದ ಸ್ಥಳ / ಪೂರ್ಣ ವಿಳಾಸ</label><textarea name="incidentLocation" placeholder="ಗ್ರಾಮ, ರಸ್ತೆ, ಮನೆ ಸಂಖ್ಯೆ, ಗುರುತು..."></textarea></div><div class="field"><label>ದೂರುದಾರರ ಹೆಸರು</label><input name="complainantName"></div><div class="field"><label>ದೂರುದಾರರ ಮೊಬೈಲ್</label><input name="complainantPhone" inputmode="tel"></div><div class="field full"><label>ದೂರುದಾರರ ವಿಳಾಸ / ಗುರುತು ವಿವರ</label><textarea name="complainantAddress"></textarea></div></div></section>
+<section class="card" id="s5"><div class="card-head"><span class="badge">05</span><div><h2>ಅಪರಾಧ ನಡೆದ ಸ್ಥಳದ ಸ್ಥಿತಿ</h2><p>Site / property location description</p></div></div><div class="card-body grid"><div class="field full"><label>ಸ್ಥಳದ ವಿವರಣೆ</label><textarea name="siteDescription" placeholder="ಸ್ಥಳದ ಸ್ವರೂಪ, ಪ್ರವೇಶ ದಾರಿ, ಸುತ್ತಮುತ್ತಲಿನ ಗುರುತುಗಳು..."></textarea></div><div class="field"><label>ಸ್ಥಳದ ವಿಧ</label><select name="siteType"><option value="">ಆಯ್ಕೆ ಮಾಡಿ</option><option>ಮನೆ</option><option>ವಾಣಿಜ್ಯ ಕಟ್ಟಡ</option><option>ರಸ್ತೆ / ಸಾರ್ವಜನಿಕ ಸ್ಥಳ</option><option>ಕೃಷಿ ಜಮೀನು</option><option>ಇತರೆ</option></select></div><div class="field"><label>ಸ್ಥಳ ಪರಿಶೀಲನೆ ದಿನಾಂಕ / ಸಮಯ</label><input name="inspectionDateTime" type="datetime-local"></div></div></section>
+<section class="card" id="s6"><div class="card-head"><span class="badge">06</span><div><h2>ಅಪರಾಧಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಮಾಲು / ಆಸ್ತಿ</h2><p>Property or material involved</p></div></div><div class="card-body"><div id="propertyList"></div><button type="button" class="small-btn" onclick="addRepeat('propertyList','property')">＋ ಮಾಲಿನ ವಿವರ ಸೇರಿಸಿ</button></div></section>
+<section class="card" id="s7"><div class="card-head"><span class="badge">07</span><div><h2>ಅಪರಾಧದ ಉದ್ದೇಶ / ಹಿನ್ನೆಲೆ</h2><p>Motive or background</p></div></div><div class="card-body grid"><div class="field full"><label>ಉದ್ದೇಶ / ಹಿನ್ನೆಲೆಯ ವಿವರ</label><textarea name="motive" placeholder="ಲಭ್ಯವಿರುವ ಮಾಹಿತಿಯ ಆಧಾರದ ಮೇಲೆ ದಾಖಲಿಸಿ"></textarea></div></div></section>
+<section class="card" id="s8"><div class="card-head"><span class="badge">08</span><div><h2>ವಶಪಡಿಸಿಕೊಂಡ ವಸ್ತುಗಳು</h2><p>Seized / recovered items</p></div></div><div class="card-body"><div id="seizureList"></div><button type="button" class="small-btn" onclick="addRepeat('seizureList','seizure')">＋ ವಸ್ತು ಸೇರಿಸಿ</button></div></section>
+<section class="card" id="s9"><div class="card-head"><span class="badge">09</span><div><h2>ಕಳುವಾದ ಮಾಲು / ಹಾನಿ ವಿವರ</h2><p>Stolen property and estimated loss</p></div></div><div class="card-body grid"><div class="field"><label>ಮಾಲಿನ ವಿವರ</label><input name="stolenProperty" placeholder="ವಸ್ತು / ಆಸ್ತಿ ವಿವರ"></div><div class="field"><label>ಅಂದಾಜು ಮೌಲ್ಯ (₹)</label><input name="estimatedLoss" type="number" min="0" placeholder="0"></div><div class="field full"><label>ಮಾಲಿನ ಗುರುತು / ಸರಣಿ ಸಂಖ್ಯೆ</label><textarea name="propertyIdentification"></textarea></div></div></section>
+<section class="card" id="s10"><div class="card-head"><span class="badge">10</span><div><h2>ಅಪರಾಧದ ಸ್ಥಳ ಪರಿಶೀಲನೆ ಮತ್ತು ಘಟನೆ ವಿವರ</h2><p>Scene inspection and incident narrative</p></div></div><div class="card-body grid"><div class="field"><label>ಪರಿಶೀಲನೆ ದಿನಾಂಕ</label><input name="sceneDate" type="date"></div><div class="field"><label>ಪರಿಶೀಲನೆ ಸಮಯ</label><input name="sceneTime" type="time"></div><div class="field full"><label>ಘಟನೆಯ ವಿವರ / ತನಿಖೆಯಲ್ಲಿ ಕಂಡುಬಂದ ಅಂಶಗಳು</label><textarea name="incidentNarrative" placeholder="ಘಟನೆಯ ಕ್ರಮ, ಪರಿಶೀಲನೆ, ಸಾಕ್ಷ್ಯಗಳು ಮತ್ತು ಸಂಬಂಧಿತ ವಿವರಗಳನ್ನು ದಾಖಲಿಸಿ..."></textarea></div></div></section>
+<section class="card" id="s11"><div class="card-head"><span class="badge">11</span><div><h2>ಸ್ಥಳದ GPS ಅಕ್ಷಾಂಶ / ರೇಖಾಂಶ</h2><p>Geographical coordinates</p></div></div><div class="card-body grid"><div class="field"><label>ಅಕ್ಷಾಂಶ / Latitude</label><input name="latitude" inputmode="decimal" placeholder="ಉದಾ. 13.953696"></div><div class="field"><label>ರೇಖಾಂಶ / Longitude</label><input name="longitude" inputmode="decimal" placeholder="ಉದಾ. 75.555763"></div><div class="field full"><button type="button" class="small-btn" onclick="getLocation()">◎ ಸಾಧನದ ಸ್ಥಳ ಪಡೆಯಿರಿ</button><p class="hint">ಬ್ರೌಸರ್ ಅನುಮತಿ ಮತ್ತು GPS ಲಭ್ಯತೆ ಅಗತ್ಯ.</p></div></div></section>
+<section class="card" id="s12"><div class="card-head"><span class="badge">12</span><div><h2>ಸ್ಥಳದ ನಕ್ಷೆ / ಕೈಚಿತ್ರ</h2><p>Scene map or hand sketch</p></div></div><div class="card-body grid"><div class="field full"><label>ನಕ್ಷೆ / ಕೈಚಿತ್ರ ಅಪ್‌ಲೋಡ್</label><div class="uploadbox"><div class="camera-actions"><button type="button" class="primary" onclick="document.getElementById('cameraCaptureInput').click()">📷 Capture photo</button><button type="button" class="secondary" onclick="retakePhotoId=null;document.getElementById('cameraCaptureInput').click()">↻ Retake / Add photo</button></div><input id="cameraCaptureInput" type="file" accept="image/*" capture="environment" style="display:none" onchange="capturePhoto(this)"><p class="ratio-note">ಕ್ಯಾಮೆರಾದಿಂದ ನಕ್ಷೆ / ಕೈಚಿತ್ರದ ಫೋಟೋ ಸೆರೆಹಿಡಿಯಿರಿ. ಫೋಟೋ 16:9 ಅನುಪಾತಕ್ಕೆ (1280 × 720) ಕ್ರಾಪ್ ಆಗುತ್ತದೆ. ಫಾರ್ಮ್ ಉಳಿಸಿದಾಗ ಫೋಟೋವೂ ಉಳಿಯುತ್ತದೆ.</p><div id="capturedPhotos" class="capture-preview"></div><input type="file" name="siteSketch" accept="image/*" onchange="previewFiles(this,'sketchPreview')"><div class="hint">ಇತರೆ ನಕ್ಷೆ / ಕೈಚಿತ್ರ ಫೋಟೋ ಆಯ್ಕೆ ಮಾಡಲು Choose file ಬಳಸಿ.</div><div class="preview" id="sketchPreview"></div></div></div><div class="field full"><label>ನಕ್ಷೆಯ ವಿವರಣೆ</label><textarea name="sketchDescription" placeholder="ಉತ್ತರ ದಿಕ್ಕು, ರಸ್ತೆ, ಕಟ್ಟಡ, ಪ್ರವೇಶ/ನಿರ್ಗಮನ ಗುರುತುಗಳು..."></textarea></div></div></section>
+<section class="card" id="s13"><div class="card-head"><span class="badge">13</span><div><h2>ಸ್ಥಳದಿಂದ / ಆರೋಪಿತರಿಂದ ಪತ್ತೆಯಾದ ವಸ್ತುಗಳು</h2><p>Items found at scene or linked to accused</p></div></div><div class="card-body"><div id="foundList"></div><button type="button" class="small-btn" onclick="addRepeat('foundList','found')">＋ ಪತ್ತೆಯಾದ ವಸ್ತು ಸೇರಿಸಿ</button></div></section>
+<section class="card" id="s14"><div class="card-head"><span class="badge">14</span><div><h2>ಸ್ಥಳ ಪರಿಶೀಲನೆಯ ಸಮಯ</h2><p>Time period of scene inspection</p></div></div><div class="card-body grid"><div class="field"><label>ಪ್ರಾರಂಭ ದಿನಾಂಕ ಮತ್ತು ಸಮಯ</label><input name="inspectionStart" type="datetime-local"></div><div class="field"><label>ಮುಕ್ತಾಯ ದಿನಾಂಕ ಮತ್ತು ಸಮಯ</label><input name="inspectionEnd" type="datetime-local"></div></div></section>
+<section class="card" id="s15"><div class="card-head"><span class="badge">15</span><div><h2>ಪಂಚರು / ಸಾಕ್ಷಿದಾರರ ವಿವರ</h2><p>Witness / panch details</p></div></div><div class="card-body"><div id="witnessList"></div><button type="button" class="small-btn" onclick="addRepeat('witnessList','witness')">＋ ಸಾಕ್ಷಿದಾರರನ್ನು ಸೇರಿಸಿ</button></div></section>
+<section class="card" id="s16"><div class="card-head"><span class="badge">16</span><div><h2>ತನಿಖಾಧಿಕಾರಿಯ ವಿವರ</h2><p>Investigating officer details</p></div></div><div class="card-body grid"><div class="field"><label>ಅಧಿಕಾರಿಯ ಹೆಸರು</label><input name="ioName"></div><div class="field"><label>ಹುದ್ದೆ / ರ್ಯಾಂಕ್</label><input name="ioRank"></div><div class="field"><label>ಬೆಲ್ಟ್ / ಸಿಬ್ಬಂದಿ ಸಂಖ್ಯೆ</label><input name="ioBuckleNo"></div><div class="field"><label>ಪೊಲೀಸ್ ಠಾಣೆ</label><input name="ioStation"></div><div class="field full"><label>ಟಿಪ್ಪಣಿ</label><textarea name="ioRemarks"></textarea></div></div></section>
+<section class="card" id="s17"><div class="card-head"><span class="badge">17</span><div><h2>ಮಹಜರು ಮಾಡಿದ ಅಧಿಕಾರಿ / ಬೆರಳಚ್ಚು ವಿವರ</h2><p>Officer who conducted scene mahazar</p></div></div><div class="card-body grid"><div class="field"><label>ಹೆಸರು</label><input name="mahazarOfficerName"></div><div class="field"><label>ಹುದ್ದೆ / ಬೆಲ್ಟ್ ಸಂಖ್ಯೆ</label><input name="mahazarOfficerRank"></div><div class="field"><label>ಸಹಿ / ದೃಢೀಕರಣದ ವಿವರ</label><input name="mahazarOfficerSignature"></div></div></section>
+<section class="card" id="s18"><div class="card-head"><span class="badge">18</span><div><h2>ಛಾಯಾಗ್ರಹಣ / ವಿಡಿಯೋಗ್ರಫಿ ಮಾಡಿದವರು</h2><p>Photographer / videographer details</p></div></div><div class="card-body grid"><div class="field"><label>ಹೆಸರು</label><input name="photographerName"></div><div class="field"><label>ಹುದ್ದೆ / ಬೆಲ್ಟ್ ಸಂಖ್ಯೆ</label><input name="photographerRank"></div><div class="field full"><label>ಇತರೆ ಫೋಟೋ / ವಿಡಿಯೋ ಫೈಲ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</label><div class="uploadbox"><input type="file" name="scenePhotos" accept="image/*,video/*" multiple onchange="previewFiles(this,'photoPreview')"><div class="preview" id="photoPreview"></div></div></div></div></section>
+<section class="card" id="s19"><div class="card-head"><span class="badge">19</span><div><h2>ಸ್ಥಳ ಪರಿಶೀಲನೆ ಮಾಡಿದವರು / ಸಾಕ್ಷಿದಾರರ ಸಹಿ</h2><p>Officer and witness acknowledgement</p></div></div><div class="card-body grid"><div class="field"><label>ಪರಿಶೀಲಿಸಿದ ಅಧಿಕಾರಿ ಹೆಸರು</label><input name="verifiedOfficer"></div><div class="field"><label>ಸಾಕ್ಷಿದಾರರ ಹೆಸರು</label><input name="verifiedWitness"></div><div class="field"><label>ಅಧಿಕಾರಿಯ ಸಹಿ ವಿವರ</label><input name="officerSignature"></div><div class="field"><label>ಸಾಕ್ಷಿದಾರರ ಸಹಿ ವಿವರ</label><input name="witnessSignature"></div><div class="field full"><label>ಅಂತಿಮ ಟಿಪ್ಪಣಿ</label><textarea name="finalRemarks"></textarea></div></div></section>
+<div class="footerbar"><div class="left"><button type="button" class="secondary" onclick="loadForm()">↻ ಕರಡು ಮರುತೆರೆಯಿರಿ</button><button type="button" class="secondary" onclick="openSavedFiles()">📁 ಉಳಿಸಿದ ಫೈಲ್‌ಗಳು</button><button type="button" class="danger" onclick="clearForm()">ಅಳಿಸಿ / ಹೊಸ ಫಾರ್ಮ್</button></div><div class="right"><span class="status" id="status">ಸ್ಥಿತಿ: ಇನ್ನೂ ಉಳಿಸಿಲ್ಲ</span><button type="button" class="secondary" onclick="window.print()">ಮುದ್ರಿಸಿ / PDF</button><button type="button" class="primary" onclick="saveForm()">✓ ಕರಡು ಉಳಿಸಿ</button></div></div>
+</form></main></div>
+<div id="savedModal" class="modal"><div class="modal-box"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><h2 style="margin:0">📁 ಉಳಿಸಿದ ಫೈಲ್‌ಗಳು</h2><button type="button" class="secondary" onclick="closeSavedFiles()">ಮುಚ್ಚಿ ✕</button></div><p style="color:#667085">ಈ ಸಾಧನದ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಉಳಿಸಿದ ಫಾರ್ಮ್‌ಗಳು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತವೆ.</p><div id="savedFilesList"></div></div></div>
+<script>
+const sectionTitles=["ಪೊಲೀಸ್ ಠಾಣೆ ಮತ್ತು ಜಿಲ್ಲೆ","ಅಪರಾಧ ಸಂಖ್ಯೆ ಮತ್ತು ದಿನಾಂಕ","ಕಾನೂನು ಮತ್ತು ಸೆಕ್ಷನ್","ಸ್ಥಳ ಮತ್ತು ದೂರುದಾರ","ಸ್ಥಳದ ಸ್ಥಿತಿ","ಮಾಲು / ಆಸ್ತಿ","ಉದ್ದೇಶ / ಹಿನ್ನೆಲೆ","ವಶಪಡಿಸಿಕೊಂಡ ವಸ್ತುಗಳು","ಕಳುವಾದ ಮಾಲು / ಹಾನಿ","ಸ್ಥಳ ಪರಿಶೀಲನೆ ಮತ್ತು ಘಟನೆ","GPS ಅಕ್ಷಾಂಶ / ರೇಖಾಂಶ","ನಕ್ಷೆ / ಕೈಚಿತ್ರ","ಪತ್ತೆಯಾದ ವಸ್ತುಗಳು","ಪರಿಶೀಲನೆಯ ಸಮಯ","ಪಂಚರು / ಸಾಕ್ಷಿದಾರರು","ತನಿಖಾಧಿಕಾರಿ","ಮಹಜರು ಮಾಡಿದ ಅಧಿಕಾರಿ","ಫೋಟೋ / ವಿಡಿಯೋಗ್ರಫಿ","ಸಹಿ ಮತ್ತು ಅಂತಿಮ ಟಿಪ್ಪಣಿ"];
+document.getElementById('navlist').innerHTML=sectionTitles.map((t,i)=>`<a href="#s${i+1}" data-section="${i+1}"><span class="num">${String(i+1).padStart(2,'0')}</span><span>${t}</span></a>`).join('');
+let editingSavedFileId=null;
+let capturedPhotos=[];
+let retakePhotoId=null;
+function addRepeat(id,type,values=null){
+ const container=document.getElementById(id),n=container.children.length+1;
+ const configs={property:[['ವಸ್ತು / ಆಸ್ತಿ ಹೆಸರು','name'],['ಪ್ರಮಾಣ / ಸಂಖ್ಯೆ','quantity'],['ಅಂದಾಜು ಮೌಲ್ಯ (₹)','value']],seizure:[['ವಶಪಡಿಸಿಕೊಂಡ ವಸ್ತು','name'],['ವಶಪಡಿಸಿಕೊಂಡ ದಿನಾಂಕ','date'],['ಮಹಜರು / PF ವಿವರ','reference']],found:[['ಪತ್ತೆಯಾದ ವಸ್ತು','name'],['ಪತ್ತೆಯಾದ ಸ್ಥಳ','location'],['ಸಂಬಂಧಿತ ಟಿಪ್ಪಣಿ','notes']],witness:[['ಹೆಸರು','name'],['ವಯಸ್ಸು','age'],['ವಿಳಾಸ','address'],['ಮೊಬೈಲ್ (ಅಗತ್ಯವಿದ್ದಲ್ಲಿ)','phone']]};
+ const item=document.createElement('div');item.className='repeat-item';
+ item.innerHTML=`<div class="repeat-title"><span>${type==='witness'?'ಸಾಕ್ಷಿದಾರ':type==='property'?'ಮಾಲು':type==='seizure'?'ವಶಪಡಿಸಿಕೊಂಡ ವಸ್ತು':'ಪತ್ತೆಯಾದ ವಸ್ತು'} #${n}</span><button type="button" class="small-btn" onclick="this.closest('.repeat-item').remove();updateProgress()">ತೆಗೆದುಹಾಕಿ</button></div><div class="grid">${configs[type].map(([label,key])=>`<div class="field ${key==='address'||key==='notes'?'full':''}"><label>${label}</label>${key==='address'||key==='notes'?`<textarea data-repeat="${type}.${key}"></textarea>`:`<input ${key==='date'?'type="date"':key==='value'||key==='age'?'type="number"':'type="text"'} data-repeat="${type}.${key}" placeholder="${label}">`}</div>`).join('')}</div>`;
+ container.appendChild(item);
+ if(values)Object.entries(values).forEach(([key,val])=>{const el=item.querySelector(`[data-repeat="${type}.${key}"]`);if(el)el.value=val??''});
+ updateProgress();
+}
+function allData(){
+ const data={},form=document.getElementById('crimeForm');
+ [...form.querySelectorAll('input[name],select[name],textarea[name]')].forEach(el=>{if(el.type==='file')return;data[el.name]=el.value});
+ ['propertyList','seizureList','foundList','witnessList'].forEach(id=>{data[id]=[...document.getElementById(id).querySelectorAll('.repeat-item')].map(item=>{const o={};item.querySelectorAll('[data-repeat]').forEach(el=>o[el.dataset.repeat.split('.')[1]]=el.value);return o})});
+ data.capturedPhotos=capturedPhotos;data._schemaVersion=3;data._savedAt=new Date().toISOString();return data;
+}
+function saveForm(){
+ const data=allData();localStorage.setItem('crimeDetailsDraft',JSON.stringify(data));
+ const files=JSON.parse(localStorage.getItem('crimeDetailsSavedFiles')||'[]');
+ if(editingSavedFileId){
+  const index=files.findIndex(f=>f.id===editingSavedFileId);
+  if(index!==-1){
+   const crime=(data.crimeNo||'ಸಂಖ್ಯೆ ನಮೂದಿಸಿಲ್ಲ').trim(),date=data.formDate||new Date().toISOString().slice(0,10);
+   files[index].title=`${crime} - ${data.policeStation||'ಪೊಲೀಸ್ ಠಾಣೆ'} - ${date}`;files[index].data=data;files[index].savedAt=new Date().toISOString();
+   localStorage.setItem('crimeDetailsSavedFiles',JSON.stringify(files));
+   document.getElementById('status').textContent='ಸ್ಥಿತಿ: ಫೈಲ್ ಅಪ್‌ಡೇಟ್ ಆಗಿದೆ';editingSavedFileId=null;
+   alert('ಬದಲಾವಣೆಗಳು ಅದೇ ಫೈಲ್‌ನಲ್ಲಿ ಉಳಿಸಲಾಗಿದೆ.');return;
+  }editingSavedFileId=null;
+ }
+ const id=Date.now().toString(36)+Math.random().toString(36).slice(2,6),crime=(data.crimeNo||'ಸಂಖ್ಯೆ ನಮೂದಿಸಿಲ್ಲ').trim(),date=data.formDate||new Date().toISOString().slice(0,10);
+ files.unshift({id,title:`${crime} - ${data.policeStation||'ಪೊಲೀಸ್ ಠಾಣೆ'} - ${date}`,savedAt:new Date().toISOString(),data});
+ localStorage.setItem('crimeDetailsSavedFiles',JSON.stringify(files.slice(0,100)));
+ document.getElementById('status').textContent='ಸ್ಥಿತಿ: ಹೊಸ ಫೈಲ್ ಉಳಿಸಲಾಗಿದೆ';alert('ಹೊಸ ಫೈಲ್ ಯಶಸ್ವಿಯಾಗಿ ಉಳಿಸಲಾಗಿದೆ!');
+}
+function applyData(d){
+ const form=document.getElementById('crimeForm');
+ capturedPhotos=Array.isArray(d.capturedPhotos)?d.capturedPhotos:[];renderCapturedPhotos();
+ Object.keys(d).forEach(k=>{const el=form.elements.namedItem(k);if(el&&typeof d[k]==='string'&&el.type!=='file')el.value=d[k]});
+ [['propertyList','property'],['seizureList','seizure'],['foundList','found'],['witnessList','witness']].forEach(([id,type])=>{document.getElementById(id).innerHTML='';(d[id]||[]).forEach(obj=>addRepeat(id,type,obj))});
+ updateProgress();
+}
+function loadForm(){const raw=localStorage.getItem('crimeDetailsDraft');if(!raw){document.getElementById('status').textContent='ಉಳಿಸಿದ ಕರಡು ಲಭ್ಯವಿಲ್ಲ';return}editingSavedFileId=null;applyData(JSON.parse(raw));document.getElementById('status').textContent='ಸ್ಥಿತಿ: ಉಳಿಸಿದ ಕರಡು ಲೋಡ್ ಆಗಿದೆ';}
+function openSavedFiles(){renderSavedFiles();document.getElementById('savedModal').style.display='flex'}
+function closeSavedFiles(){document.getElementById('savedModal').style.display='none'}
+function renderSavedFiles(){
+ const files=JSON.parse(localStorage.getItem('crimeDetailsSavedFiles')||'[]'),box=document.getElementById('savedFilesList');
+ if(!files.length){box.innerHTML='<p>ಇನ್ನೂ ಯಾವುದೇ ಫೈಲ್ ಉಳಿಸಿಲ್ಲ. ಫಾರ್ಮ್ ತುಂಬಿ “ಕಡತ ಉಳಿಸಿ” ಒತ್ತಿರಿ.</p>';return}
+ box.innerHTML=files.map(f=>`<div class="file-row"><div style="flex:1;min-width:180px"><strong>${escapeHtml(f.title)}</strong><div style="color:#667085;font-size:12px;margin-top:5px">${new Date(f.savedAt).toLocaleString('kn-IN')}</div></div><div class="file-actions"><button class="secondary" type="button" onclick="openSavedFile('${f.id}')">ತೆರೆಯಿರಿ</button><button class="primary" type="button" onclick="editSavedFile('${f.id}')">✏️ Edit</button><button class="secondary" type="button" onclick="downloadSavedPDF('${f.id}')">PDF</button><button class="danger" type="button" onclick="deleteSavedFile('${f.id}')">ಅಳಿಸಿ</button></div></div>`).join('');
+}
+function escapeHtml(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function openSavedFile(id){const f=JSON.parse(localStorage.getItem('crimeDetailsSavedFiles')||'[]').find(x=>x.id===id);if(!f)return;editingSavedFileId=null;applyData(f.data);closeSavedFiles();document.getElementById('status').textContent='ಸ್ಥಿತಿ: '+f.title+' ತೆರೆಯಲಾಗಿದೆ';window.scrollTo({top:0,behavior:'smooth'})}
+function editSavedFile(id){const files=JSON.parse(localStorage.getItem('crimeDetailsSavedFiles')||'[]'),f=files.find(x=>x.id===id);if(!f){alert('ಈ ಫೈಲ್ ಕಂಡುಬಂದಿಲ್ಲ.');return}editingSavedFileId=id;applyData(f.data);closeSavedFiles();document.getElementById('status').textContent='ಸ್ಥಿತಿ: ಎಡಿಟ್ ಮಾಡಲಾಗುತ್ತಿದೆ — '+f.title;window.scrollTo({top:0,behavior:'smooth'});alert('ಫೈಲ್ ಎಡಿಟ್ ಮಾಡಲು ತೆರೆಯಲಾಗಿದೆ. ಬದಲಾವಣೆ ಮಾಡಿ “ಕಡತ ಉಳಿಸಿ” ಒತ್ತಿರಿ.')}
+function downloadSavedPDF(id){const f=JSON.parse(localStorage.getItem('crimeDetailsSavedFiles')||'[]').find(x=>x.id===id);if(!f)return;editingSavedFileId=null;applyData(f.data);closeSavedFiles();document.title=(f.title||'Crime Details').replace(/[^\w\- ]/g,'_');setTimeout(()=>window.print(),350)}
+function deleteSavedFile(id){if(!confirm('ಈ ಉಳಿಸಿದ ಫೈಲ್ ಅಳಿಸಬೇಕೇ?'))return;const files=JSON.parse(localStorage.getItem('crimeDetailsSavedFiles')||'[]').filter(f=>f.id!==id);localStorage.setItem('crimeDetailsSavedFiles',JSON.stringify(files));if(editingSavedFileId===id)editingSavedFileId=null;renderSavedFiles()}
+function clearForm(){if(!confirm('ಎಲ್ಲಾ ನಮೂದಿಸಿದ ವಿವರಗಳನ್ನು ತೆರವುಗೊಳಿಸಬೇಕೇ?'))return;document.getElementById('crimeForm').reset();['propertyList','seizureList','foundList','witnessList'].forEach(id=>document.getElementById(id).innerHTML='');['sketchPreview','photoPreview','capturedPhotos'].forEach(id=>document.getElementById(id).innerHTML='');capturedPhotos=[];editingSavedFileId=null;localStorage.removeItem('crimeDetailsDraft');document.getElementById('status').textContent='ಸ್ಥಿತಿ: ಹೊಸ ಫಾರ್ಮ್';updateProgress()}
+function getLocation(){if(!navigator.geolocation){alert('ಈ ಬ್ರೌಸರ್ GPS ಬೆಂಬಲಿಸುವುದಿಲ್ಲ');return}navigator.geolocation.getCurrentPosition(pos=>{document.querySelector('[name="latitude"]').value=pos.coords.latitude.toFixed(6);document.querySelector('[name="longitude"]').value=pos.coords.longitude.toFixed(6);updateProgress()},err=>alert('ಸ್ಥಳ ಪಡೆಯಲಾಗಲಿಲ್ಲ: '+err.message),{enableHighAccuracy:true,timeout:10000})}
+function previewFiles(input,target){
+ const box=document.getElementById(target);box.innerHTML='';
+ [...input.files].forEach((file,index)=>{
+  const card=document.createElement('div');card.className='upload-file-card';
+  const url=URL.createObjectURL(file);
+  if(file.type.startsWith('image/')){const img=document.createElement('img');img.alt=file.name;img.src=url;card.appendChild(img)}
+  else if(file.type.startsWith('video/')){const video=document.createElement('video');video.src=url;video.controls=true;card.appendChild(video)}
+  else {const icon=document.createElement('div');icon.textContent='📎';card.appendChild(icon)}
+  const name=document.createElement('div');name.className='upload-file-name';name.textContent=file.name;card.appendChild(name);
+  const actions=document.createElement('div');actions.className='upload-file-actions';
+  const show=document.createElement('button');show.type='button';show.className='secondary';show.textContent='ತೋರಿಸಿ';show.onclick=()=>{if(file.type.startsWith('image/')||file.type.startsWith('video/'))window.open(url,'_blank');else alert(file.name)};
+  const download=document.createElement('button');download.type='button';download.className='secondary';download.textContent='ಡೌನ್‌ಲೋಡ್';download.onclick=()=>{const a=document.createElement('a');a.href=url;a.download=file.name;a.click()};
+  const del=document.createElement('button');del.type='button';del.className='danger';del.textContent='ಅಳಿಸಿ';del.onclick=()=>{if(!confirm('ಈ ಫೈಲ್ ತೆಗೆದುಹಾಕಬೇಕೇ?'))return;const dt=new DataTransfer();[...input.files].forEach((f,i)=>{if(i!==index)dt.items.add(f)});input.files=dt.files;previewFiles(input,target)};
+  actions.append(show,download,del);card.appendChild(actions);box.appendChild(card);
+ });
+}
+async function capturePhoto(input){
+ const file=input.files&&input.files[0];if(!file)return;
+ try{
+  const bitmap=await createImageBitmap(file),targetRatio=16/9;
+  let sw=bitmap.width,sh=bitmap.height,sx=0,sy=0;
+  if(sw/sh>targetRatio){const nw=sh*targetRatio;sx=(sw-nw)/2;sw=nw}else{const nh=sw/targetRatio;sy=(sh-nh)/2;sh=nh}
+  const canvas=document.createElement('canvas');canvas.width=1280;canvas.height=720;
+  const ctx=canvas.getContext('2d');ctx.drawImage(bitmap,sx,sy,sw,sh,0,0,1280,720);bitmap.close();
+  const dataUrl=canvas.toDataURL('image/jpeg',0.86);
+  const item={id:Date.now().toString(36)+Math.random().toString(36).slice(2,6),dataUrl,name:file.name||'Captured photo',capturedAt:new Date().toISOString()};
+  if(retakePhotoId){const idx=capturedPhotos.findIndex(p=>p.id===retakePhotoId);if(idx>=0)capturedPhotos[idx]=item;else capturedPhotos.push(item);retakePhotoId=null}else capturedPhotos.push(item);
+  renderCapturedPhotos();document.getElementById('status').textContent='ಸ್ಥಿತಿ: ಫೋಟೋ ಸೆರೆಹಿಡಿಯಲಾಗಿದೆ — ಫಾರ್ಮ್ ಉಳಿಸಲು “ಕಡತ ಉಳಿಸಿ” ಒತ್ತಿರಿ';
+ }catch(err){alert('ಫೋಟೋ ಓದಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.');console.error(err)}
+ input.value='';
+}
+function renderCapturedPhotos(){const box=document.getElementById('capturedPhotos');if(!box)return;box.innerHTML='';capturedPhotos.forEach((photo,index)=>{const card=document.createElement('div');card.className='capture-card';const img=document.createElement('img');img.src=photo.dataUrl;img.alt='Captured photo '+(index+1);const caption=document.createElement('div');caption.style.cssText='font-size:12px;margin-top:6px;overflow-wrap:anywhere';caption.textContent='ಫೋಟೋ '+(index+1)+' · 16:9';const actions=document.createElement('div');actions.className='capture-actions';const retake=document.createElement('button');retake.type='button';retake.className='secondary';retake.textContent='↻ Retake';retake.onclick=()=>{retakePhotoId=photo.id;document.getElementById('cameraCaptureInput').click()};const del=document.createElement('button');del.type='button';del.className='danger';del.textContent='Delete';del.onclick=()=>{if(confirm('ಈ ಫೋಟೋ ಅಳಿಸಬೇಕೇ?')){capturedPhotos=capturedPhotos.filter(p=>p.id!==photo.id);renderCapturedPhotos()}};actions.append(retake,del);card.append(img,caption,actions);box.appendChild(card)})}
+
+function resizeTextarea(el){el.style.height='auto';el.style.height=Math.max(48,el.scrollHeight)+'px'}
+function setupAutoResize(){document.querySelectorAll('textarea').forEach(resizeTextarea)}
+
+// In print/PDF, render textarea content as normal flowing text. A textarea
+// is a single replaced control in many browsers and may jump to the next page
+// as one large block; a regular div can fragment naturally across pages.
+let printTextareaMirrors=[];
+window.addEventListener('beforeprint',()=>{
+  printTextareaMirrors.forEach(m=>m.remove());
+  printTextareaMirrors=[];
+  document.querySelectorAll('textarea').forEach(el=>{
+    const mirror=document.createElement('div');
+    mirror.className='print-text-content';
+    mirror.textContent=el.value || '\\u00a0';
+    el.classList.add('print-source');
+    el.insertAdjacentElement('afterend',mirror);
+    printTextareaMirrors.push(mirror);
+  });
+});
+window.addEventListener('afterprint',()=>{
+  printTextareaMirrors.forEach(m=>m.remove());
+  printTextareaMirrors=[];
+  document.querySelectorAll('textarea.print-source').forEach(el=>el.classList.remove('print-source'));
+});
+document.getElementById('crimeForm').addEventListener('input',e=>{if(e.target.matches('textarea'))resizeTextarea(e.target)});
+function updateProgress(){const form=document.getElementById('crimeForm'),fields=[...form.querySelectorAll('input:not([type=file]),select,textarea')].filter(el=>el.type!=='button'),filled=fields.filter(el=>el.value.trim()!=='').length,pct=fields.length?Math.round(filled/fields.length*100):0;document.getElementById('progressFill').style.width=pct+'%';document.getElementById('progressText').textContent=pct+'% ಪೂರ್ಣಗೊಂಡಿದೆ'}
+document.getElementById('crimeForm').addEventListener('input',updateProgress);
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('.navlist a').forEach(a=>a.classList.toggle('active',a.dataset.section===e.target.id.slice(1)))}),{rootMargin:'-20% 0px -65% 0px'});
+document.querySelectorAll('.card').forEach(c=>observer.observe(c));
+addRepeat('propertyList','property');addRepeat('witnessList','witness');setupAutoResize();updateProgress();
+</script>
+</body>
+</html>
